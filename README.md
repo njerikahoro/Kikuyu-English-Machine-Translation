@@ -1,7 +1,7 @@
 # Kikuyu-English-Machine-Translation
 # Thiomi Multilingual Machine Translation (MMT): Kikuyu ⇄ English
 
-👉 **[Live Demo on Hugging Face Spaces] https://huggingface.co/spaces/NjeriKahoro/kikuyu-english-translator ** 👉 **[Model Checkpoint on Hugging Face Hub] https://huggingface.co/NjeriKahoro/nllb-200-Thiomi-Kik-Eng-3 **
+👉 **[Live Demo on Hugging Face Spaces] https://huggingface.co/spaces/NjeriKahoro/kikuyu-english-translator **    👉 **[Model Checkpoint on Hugging Face Hub] https://huggingface.co/NjeriKahoro/nllb-200-Thiomi-Kik-Eng-3 **
 
 An end-to-end Machine Translation (MT) pipeline featuring a fine-tuned, bidirectional...
 
@@ -35,7 +35,7 @@ To optimize multilingual parameter updates, raw text columns are converted dynam
 | Source Code | Input String (Tokenized) | Target Code | Output String (Labels) |
 | :--- | :--- | :--- | :--- |
 | `kik_Latn` | Mbura nene na riũwa inini. | `eng_Latn` | Heavy rain and a little sun. |
-| `eng_Latn` | It's a good day today. | `kik_Latn` | Rũciũ rũrĩa nĩ rũega. |
+| `eng_Latn` | It's a good day today. | `kik_Latn` | Ũmũthĩ nĩ mũthenya mwega. |
 
 ---
 
@@ -69,6 +69,3 @@ The training logs show steady convergence of translation perplexity over the epo
 
 The deployment script `app.py` runs an interactive web interface allowing users to seamlessly transition between translation targets.
 
-```bash
-pip install gradio transformers torch
-python app.py
